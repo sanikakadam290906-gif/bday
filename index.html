@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy 20th Birthday Vaishnavi!</title>
+  <meta name="description" content="A special 3-screen interactive 20th birthday celebration for Vaishnavi.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,700;0,800;0,900;1,700;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- SCREEN 1 (reference/1.png) -->
+  <section id="screen-1" class="screen screen-1 active" aria-hidden="false">
+    <div class="screen-content s1-content">
+      <!-- 7 Kid Hat images (6 visible per reference, 7th in DOM per spec) -->
+      <img src="assets/kid-hat.png" alt="Baby with party hat" class="kid-hat kid-hat-1">
+      <img src="assets/kid-hat.png" alt="Baby with party hat" class="kid-hat kid-hat-2">
+      <img src="assets/kid-hat.png" alt="Baby with party hat" class="kid-hat kid-hat-3">
+      <img src="assets/kid-hat.png" alt="Baby with party hat" class="kid-hat kid-hat-4">
+      <img src="assets/kid-hat.png" alt="Baby with party hat" class="kid-hat kid-hat-5">
+      <img src="assets/kid-hat.png" alt="Baby with party hat" class="kid-hat kid-hat-6">
+      <img src="assets/kid-hat.png" alt="Baby with party hat" class="kid-hat kid-hat-7" aria-hidden="true">
+
+      <!-- Centered pill button "CLICK ME" -->
+      <div class="s1-btn-wrap">
+        <button id="btn-click-me" class="btn-pill btn-click-me" type="button" aria-label="Click me to view screen 2">
+          CLICK ME
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREEN 2 (reference/2.png) -->
+  <section id="screen-2" class="screen screen-2" aria-hidden="true">
+    <div class="screen-content s2-content">
+
+      <!-- Pill Banner 'THIS IS VAISHNAVI' (top center in desktop, first in mobile flow) -->
+      <div class="banner-pill-wrapper">
+        <div class="banner-pill">
+          <div class="banner-gingham-left" aria-hidden="true"></div>
+          <h1 class="banner-title">THIS IS VAISHNAVI</h1>
+          <div class="banner-gingham-right" aria-hidden="true"></div>
+        </div>
+      </div>
+
+      <!-- Camera Frame with Pixel Avatar inside white screen -->
+      <div class="camera-wrapper">
+        <div class="camera-container">
+          <img src="assets/camera-frame.webp" alt="Pink Camera Frame" class="camera-frame-img" loading="lazy">
+          <div class="camera-screen-wrap">
+            <img src="assets/pixel.png" alt="Pixel Avatar" class="pixel-avatar-img" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 Tilted Polaroids -->
+      <div class="polaroids-grid">
+        <!-- Polaroid 1: She is PRETTY -->
+        <div class="polaroid-card polaroid-1">
+          <div class="polaroid-photo-box">
+            <img src="assets/polaroid-1.webp" alt="Photo 1" class="polaroid-photo" loading="lazy">
+          </div>
+          <p class="polaroid-caption">She is PRETTY</p>
+        </div>
+
+        <!-- Polaroid 2: She is SMART -->
+        <div class="polaroid-card polaroid-2">
+          <div class="polaroid-photo-box">
+            <img src="assets/polaroid-2.webp" alt="Photo 2" class="polaroid-photo" loading="lazy">
+          </div>
+          <p class="polaroid-caption">She is SMART</p>
+        </div>
+
+        <!-- Polaroid 3: She is ADORABLE -->
+        <div class="polaroid-card polaroid-3">
+          <div class="polaroid-photo-box">
+            <img src="assets/polaroid-3.webp" alt="Photo 3" class="polaroid-photo" loading="lazy">
+          </div>
+          <p class="polaroid-caption">She is ADORABLE</p>
+        </div>
+
+        <!-- Polaroid 4: She is KIND -->
+        <div class="polaroid-card polaroid-4">
+          <div class="polaroid-photo-box">
+            <img src="assets/polaroid-4.webp" alt="Photo 4" class="polaroid-photo" loading="lazy">
+          </div>
+          <p class="polaroid-caption">She is KIND</p>
+        </div>
+
+        <!-- Polaroid 5: and i LOVE her -->
+        <div class="polaroid-card polaroid-5">
+          <div class="polaroid-photo-box">
+            <img src="assets/polaroid-5.webp" alt="Photo 5" class="polaroid-photo" loading="lazy">
+          </div>
+          <p class="polaroid-caption">and i LOVE her</p>
+        </div>
+      </div>
+
+      <!-- NEXT Button (under camera in desktop, bottom in mobile) -->
+      <div class="next-btn-wrapper">
+        <button id="btn-next" class="btn-pill btn-next" type="button" aria-label="Next slide">
+          NEXT
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SCREEN 3 (reference/3.png) -->
+  <section id="screen-3" class="screen screen-3" aria-hidden="true">
+    <div class="screen-content s3-content">
+
+      <!-- Left: Card banner and Cake -->
+      <div class="s3-left-col">
+        <div class="card-banner-wrapper">
+          <img src="assets/card-banner.webp" alt="Birthday Card Banner" class="card-banner-img" loading="lazy">
+          <div class="card-banner-cream-content">
+            <span class="card-line-top">AND ITS HER</span>
+            <span class="card-line-age">20<sup>TH</sup></span>
+            <span class="card-line-bottom">BIRTHDAY TODAY</span>
+          </div>
+        </div>
+
+        <div class="cake-container">
+          <img src="assets/cake.png" alt="Birthday Cake with Candles" class="cake-img" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Right: Nebula photo and caption -->
+      <div class="s3-right-col">
+        <div class="nebula-card">
+          <div class="nebula-img-box">
+            <img src="assets/nebula.webp" alt="Space Nebula on birthday" class="nebula-img" loading="lazy">
+          </div>
+          <p class="nebula-caption">
+            This is what universe looked like on ur day which is so accurate because it looks like just how you are inside out that is BEAUTIFUL.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
